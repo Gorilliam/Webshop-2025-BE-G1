@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Finkrossade tomater",
+        "price": 25.00,
+        "image": "https://productimages.motatos.com/MS250161/ms250161_1-92537e81-098c-407e-9716-955925b959de.png?tr=w-160%2Cbg-ffffff&itok=zf1TvFqu",
+        "unit": "g",
+        "amount": 400,
+        "brand": "Fontana",
+        "discount": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "stock": 5,
+        "category": "ätbart"
+    },
+    {
+        "name": "Grönsakssoppa",
+        "price": 19.00,
+        "image": "https://productimages.motatos.com/MS220061/ms220061_1-c766b93d-dc22-4dc9-9041-132a09c2bce1.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
+        "unit": "g",
+        "amount": 400,
+        "brand": "Heinz",
+        "discount": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "stock": 5,
+        "category": "ätbart"
+    },
+    {
+        "name": "Coca Cola",
+        "price": 15.90,
+        "image": "https://bilder.kolonial.no/prod/local_products/63f3f005-c226-4fdf-bbba-8a88da1de73a.jpg?auto=format&fit=max&w=368&s=d631c270b2981123acc9f956fca5e92d",
+        "unit": "cl",
+        "amount": 33,
+        "brand": "Coca Cola",
+        "discount": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "stock": 5,
+        "category": "drickbart"
+    },
+    {
+        "name": "Majonnäs",
+        "price": 20,
+        "image": "https://productimages.motatos.com/MS104942/602895-ae35b8a5-8a02-4053-8448-61bacf2bb77b.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
+        "unit": "g",
+        "amount": 200,
+        "brand": "Coca Cola",
+        "discount": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "stock": 5,
+        "category": "ätbart"
+    },
+    {
+        "name": "Fryspåsar",
+        "price": 10,
+        "image": "https://productimages.motatos.com/MS246146/ms246146_1-5759becf-0666-4a4d-89d7-94d7eaf760a0.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
+        "unit": "st",
+        "amount": 25,
+        "brand": "Prima",
+        "discount": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "stock": 5,
+        "category": "hushåll"
+    },
+    {
+        "name": "Stålkastrull 5l",
+        "price": 295,
+        "image": "https://productimages.motatos.com/MS250213/ms250213_1-9fbc9a16-a007-4a9e-bb97-939b6eda5ea5.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
+        "unit": "st",
+        "amount": 1,
+        "brand": "Orrefors Jernverk",
+        "discount": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "stock": 5,
+        "category": "hushåll"
+    },
+    {
+        "name": "Havregryn",
+        "price": 15,
+        "image": "https://productimages.motatos.com/MS235187/ms235187_1234-2a5862b9-4ff9-4b3d-950e-7cb987366372.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
+        "unit": "g",
+        "amount": 750,
+        "brand": "Fontana",
+        "discount": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "stock": 5,
+        "category": "ätbart"
+    },
+    {
+        "name": "Mango Soft & Chewy",
+        "price": 15,
+        "image": "https://productimages.motatos.com/MS221897/ms221897_1-c367e021-a875-4b74-a9cc-be4dc8d81397.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
+        "unit": "kg",
+        "amount": 750,
+        "brand": "Fontana",
+        "discount": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "stock": 5,
+        "category": "ätbart"
+    }
+]
