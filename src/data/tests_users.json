@@ -1,0 +1,86 @@
+[
+    {
+        "firstname": "Sara",
+        "lastname": "Serasol",
+        "email": "serasolsara@fika.nu",
+        "password": "Fikapafredag123!"
+    },
+    {
+        "firstname": "Jesper",
+        "lastname": "Budguru",
+        "email": "wolfofwallstreet@example.com",
+        "password": "Budgud123!"
+    },
+    {
+        "firstname": "Jacob",
+        "lastname": "Deeppocket",
+        "email": "jacobdeeppocket@example.com",
+        "password": "Verydeep123!"
+    },
+    {
+        "firstname": "Mark",
+        "lastname": "Thumbsup",
+        "email": "notthumbingdown@example.com",
+        "password": "Ithumbup123!"
+    },
+    {
+        "firstname": "Mansi",
+        "lastname": "Nightowl",
+        "email": "neverstopwork@example.com",
+        "password": "Iwork247!"
+    },
+    {
+        "firstname": "Doug",
+        "lastname": "Quick",
+        "email": "addedtomain@already.com",
+        "password": "123Works!"
+    },
+    {
+        "firstname": "Fenris",
+        "lastname": "Moonhowler",
+        "email": "itransform@night.com",
+        "password": "Awooooo123!"
+    },
+    {
+        "firstname": "William",
+        "lastname": "Longwaytogo",
+        "email": "sunnyside@up.com",
+        "password": "Sunside123!"
+    },
+    {
+        "firstname": "Tony",
+        "lastname": "Skillsson",
+        "email": "tony.skillsson@example.com",
+        "password": "Pass123!"
+    },
+    {
+        "firstname": "Roy",
+        "lastname": "Goalsson",
+        "email": "roy.goalsson@example.com",
+        "password": "Secure456!"
+    },
+    {
+        "firstname": "Fia",
+        "lastname": "Lelsson",
+        "email": "fia.lelsson@example.com",
+        "password": "Test789!"
+    },
+    {
+        "firstname": "Mia",
+        "lastname": "Karlsson",
+        "email": "mia.karlsson@example.com",
+        "password": "MiaPass321!"
+    },
+    {
+        "firstname": "Jon",
+        "lastname": "Andersson",
+        "email": "jon.andersson@example.com",
+        "password": "JonSecure098!"
+    },
+    {
+        "firstname": "Ella",
+        "lastname": "Pettersson",
+        "email": "ella.pettersson@example.com",
+        "password": "EllaStrong555!"
+    }
+]
