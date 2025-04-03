@@ -35,7 +35,7 @@ app.use((req, res, next) => {
 });
 
 // API Documentation route
-app.get(["/", "/api", "/api/"], apiDocumentation);
+app.get("/api", apiDocumentation);
 
 // Routes
 app.use("/api/auth", authRoutes);
