@@ -43,15 +43,16 @@ app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
 
+mongoose.connect(MONGODB_URI)
+  .then(() => {
+    console.log(`Connected, `, MONGODB_URI)
+  })
+  .catch((err) => {
+    console.log("Failed connecting to MONGO")
+    console.log(err)
+  })
+  
 app.listen(PORT,() => {
-  mongoose.connect(MONGODB_URI)
-    .then(() => {
-      console.log(`Connected, `, MONGODB_URI)
-    })
-    .catch((err) => {
-      console.log("Failed connecting to MONGO")
-      console.log(err)
-    })
   console.log(`Server running on port ${PORT}`);
   console.log(`http://localhost:${PORT}`)
 });
