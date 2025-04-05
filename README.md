@@ -116,7 +116,7 @@ For information on authentication, see the authentication section.
 
 ### Using the insertDocs test route for quick and easy testing
 
-Simply make a `POST` request to `/api/test/insertDocs` with a JSON body that looks like the example below. sYou must, of course, fill in the data you want to insert.
+Simply make a `POST` request to `/api/test/insertDocs` with a JSON body that looks like the example below. You must, of course, fill in the data you want to insert.
 
 ```json
 {
@@ -129,7 +129,9 @@ Simply make a `POST` request to `/api/test/insertDocs` with a JSON body that loo
 
 ## Authentication
 
-In order to make successful requests to certain endpoints, you must have a token-cookie attached to the client. This will be attached automatically on signup & login requests, regardless of whether they're made in the browser, or with another HTTP client such as Postman. Postman will automaticlly send the token-cookie back on requests, but fetch and axios will not. In order to ensure that this cookie is automatically passed back to the server during requests in the browser, an extra step must be taken so that the request is configured correctly. Below are examples with both the fetch API and axios.
+In order to make successful requests to certain endpoints, you must have a token-cookie attached to the client. This will be set on the client automatically on successful signup & login requests, regardless of whether they're made in the browser, or with another HTTP client such as Postman. 
+
+When it comes to sending the token-cookie back to the server, Postman will automaticlly attach the token-cookie, but fetch and axios will not. In order to ensure that this cookie is automatically passed back to the server during requests in the browser, an extra step must be taken so that the request is configured correctly. Below are examples with both the fetch API and axios.
 
 ```js
 async function fetchExample() {
