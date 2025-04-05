@@ -88,7 +88,6 @@ For information on authentication, see the authentication section.
 |--------|-----|---------------|------|
 | GET | /api/ | Get api documentation, formatted for easily importing into postman ||
 | GET | /api/categories | Get all categories ||
-| <td colspan="4" style="font-size: 18px;">__PRODUCT ROUTES__</td>
 | GET | /api/products | Get all products ||
 | GET | /api/products/:id | Get single product by id ||
 | POST | /api/products | Create a product | Requires JSON object of new product and admin authentication |
@@ -97,11 +96,9 @@ For information on authentication, see the authentication section.
 | DELETE | /api/prodcuts | Delete a product | Requires JSON object containing either an id or name property
 | GET | /api/products/by-category/:nameOrId | Get all products of a given category ||
 | GET | /api/products/by-price/:min/:max | Get all products within a price range | Can use "Infinity" for max
-| <td colspan="4" style="font-size: 18px;">__AUTH/USER ROUTES__</td>
 | POST | /api/auth/signup | Create a user | Requires JSON object of the new user to add. Sets a token-cookie.
 | POST | /api/auth/login | Get an existing user and token | Requires JSON object containing email and password. Sets a token-cookie.
 | GET | /api/auth/me | Checks for the token-cookie and returns user data if it's valid | Must have token-cookie
-| <td colspan="4" style="font-size: 18px;">__TEST ROUTES__</td>
 | POST | /api/test/addCategory | Create a category | Requires JSON object of new category to add. Only needs one field: name.
 | POST | /api/test/addCategories | Create multiple categories at once. | Requires JSON array of new category objects.
 | POST | /api/test/addProduct | Create a product | Requires JSON object of new product.
