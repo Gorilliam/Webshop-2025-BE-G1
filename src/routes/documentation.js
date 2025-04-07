@@ -93,6 +93,12 @@ documentRoute({
 
 // Order routes
 documentRoute({
+    name: "Get all orders",
+    method: "GET",
+    url: "/api/orders"
+})
+
+documentRoute({
     name: "Add order",
     method: "POST",
     url: "/api/orders",
