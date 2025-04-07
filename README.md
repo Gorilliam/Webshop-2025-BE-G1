@@ -145,7 +145,8 @@ Simply make a `POST` request to `/api/test/insertDocs` with a JSON body that loo
     "purgeAllFirst": true,
     "users": [{}, {}, {}],
     "categories": [{}, {}, {}],
-    "products": [{}, {}, {}]
+    "products": [{}, {}, {}],
+    "orders": [{}, {}, {}]
 }
 ```
 
