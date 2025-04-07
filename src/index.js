@@ -14,7 +14,8 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/hakim-livs";
+const MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://localhost:27017/hakim-livs";
 
 // Middleware
 app.use(cors("*"));
@@ -23,13 +24,13 @@ app.use(cookieParser());
 
 // logger
 app.use((req, res, next) => {
-  console.log(`\n\n--- New request ---`)
+  console.log(`\n\n--- New request ---`);
   console.log(`${req.method} @ ${req.url}`);
   console.log("BODY:", req.body);
 
-  res.on('finish', () => {
-    console.log(`- END of ${req.method}${req.url} -`)
-  })
+  res.on("finish", () => {
+    console.log(`- END of ${req.method}${req.url} -`);
+  });
 
   next();
 });
@@ -43,17 +44,18 @@ app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
 
-app.listen(PORT,() => {
-  mongoose.connect(MONGODB_URI)
+app.listen(PORT, () => {
+  mongoose
+    .connect(MONGODB_URI)
     .then(() => {
-      console.log(`Connected, `, MONGODB_URI)
+      console.log(`Connected, `, MONGODB_URI);
     })
     .catch((err) => {
-      console.log("Failed connecting to MONGO")
-      console.log(err)
-    })
+      console.log("Failed connecting to MONGO");
+      console.log(err);
+    });
   console.log(`Server running on port ${PORT}`);
-  console.log(`http://localhost:${PORT}`)
+  console.log(`http://localhost:${PORT}`);
 });
 
-// 
+//
