@@ -12,7 +12,6 @@ import orderRoutes from "./routes/orders.js";
 import { mustBeDeveloper } from "./middleware/test.js";
 import { userContextMiddleware } from "./middleware/user.js";
 import { adminAuth } from "./middleware/auth.js";
-import orderRoutes from "./routes/orders.js";
 
 dotenv.config();
 
@@ -52,23 +51,6 @@ app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
 app.use("/api/orders", orderRoutes )
 
-// async function start() {
-//   try {
-//     const conn = await mongoose.connect(MONGODB_URI)
-//     console.log(`Connected successfully.`)
-//     await conn.syncIndexes() // So that indexes are automatically dropped if a schema changes.
-//     console.log(`Schemas synchronized.`)
-//   } catch (error) {
-//     console.log(`Failed connecting`)
-//     console.log(error)
-//   }
-
-//   app.listen(PORT, () => {
-//     console.log(`Server running. http://localhost:${PORT}`)
-//   })
-// }
-
-// start()
 
 mongoose.connect(MONGODB_URI)
   .then((conn) => {
