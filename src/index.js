@@ -52,36 +52,37 @@ app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
 app.use("/api/orders", orderRoutes )
 
-async function start() {
-  try {
-    const conn = await mongoose.connect(MONGODB_URI)
-    console.log(`Connected successfully.`)
-    await conn.syncIndexes() // So that indexes are automatically dropped if a schema changes.
-    console.log(`Schemas synchronized.`)
-  } catch (error) {
-    console.log(`Failed connecting`)
-    console.log(error)
-  }
+// async function start() {
+//   try {
+//     const conn = await mongoose.connect(MONGODB_URI)
+//     console.log(`Connected successfully.`)
+//     await conn.syncIndexes() // So that indexes are automatically dropped if a schema changes.
+//     console.log(`Schemas synchronized.`)
+//   } catch (error) {
+//     console.log(`Failed connecting`)
+//     console.log(error)
+//   }
 
-  app.listen(PORT, () => {
-    console.log(`Server running. http://localhost:${PORT}`)
+//   app.listen(PORT, () => {
+//     console.log(`Server running. http://localhost:${PORT}`)
+//   })
+// }
+
+// start()
+
+mongoose.connect(MONGODB_URI)
+  .then((conn) => {
+    console.log(`Connected, `, MONGODB_URI)
+    conn.syncIndexes()
   })
-}
-
-start()
-
-// mongoose.connect(MONGODB_URI)
-//   .then(() => {
-//     console.log(`Connected, `, MONGODB_URI)
-//   })
-//   .catch((err) => {
-//     console.log("Failed connecting to MONGO")
-//     console.log(err)
-//   })
+  .catch((err) => {
+    console.log("Failed connecting to MONGO")
+    console.log(err)
+  })
   
-// app.listen(PORT,() => {
-//   console.log(`Server running on port ${PORT}`);
-//   console.log(`http://localhost:${PORT}`)
-// });
+app.listen(PORT,() => {
+  console.log(`Server running on port ${PORT}`);
+  console.log(`http://localhost:${PORT}`)
+});
 
 //
