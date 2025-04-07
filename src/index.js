@@ -47,7 +47,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
-app.use("/api/orders", adminAuth, orderRoutes )
+app.use("/api/orders", orderRoutes )
 
 async function start() {
   try {
