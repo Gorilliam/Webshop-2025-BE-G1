@@ -113,7 +113,7 @@ For information on authentication, see the authentication section.
 ### Order endpoints
 | METHOD | URL | WHAT IT'S FOR | INFO |
 |--------|-----|---------------|------|
-| GET | /api/orders | Get all orders ||
+| Get | /api/orders | Get all orders | |
 | POST | /api/orders | Create an order | Required JSON object. See /api/ for more details.
 
 ### Test endpoints
