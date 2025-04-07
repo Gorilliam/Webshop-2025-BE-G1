@@ -9,6 +9,7 @@ import testRouter from "./routes/test.js";
 import apiDocumentation from "./routes/documentation.js";
 import categoryRoutes from "./routes/categories.js";
 import { mustBeDeveloper } from "./middleware/test.js";
+import { adminAuth } from "./middleware/auth.js";
 
 dotenv.config();
 
@@ -42,6 +43,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
+app.use("/api/orders", adminAuth, orderRoutes )
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
