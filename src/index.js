@@ -10,6 +10,7 @@ import apiDocumentation from "./routes/documentation.js";
 import categoryRoutes from "./routes/categories.js";
 import { mustBeDeveloper } from "./middleware/test.js";
 import { adminAuth } from "./middleware/auth.js";
+import orderRoutes from "./routes/orders.js";
 
 dotenv.config();
 
