@@ -9,6 +9,7 @@ import testRouter from "./routes/test.js";
 import apiDocumentation from "./routes/documentation.js";
 import categoryRoutes from "./routes/categories.js";
 import { mustBeDeveloper } from "./middleware/test.js";
+import { adminAuth } from "./middleware/auth.js";
 
 dotenv.config();
 
@@ -36,24 +37,26 @@ app.use((req, res, next) => {
 });
 
 // API Documentation route
-app.get(["/", "/api", "/api/"], apiDocumentation);
+app.get("/api", apiDocumentation);
 
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
+app.use("/api/orders", adminAuth, orderRoutes);
+
+mongoose
+  .connect(MONGODB_URI)
+  .then(() => {
+    console.log(`Connected, `, MONGODB_URI);
+  })
+  .catch((err) => {
+    console.log("Failed connecting to MONGO");
+    console.log(err);
+  });
 
 app.listen(PORT, () => {
-  mongoose
-    .connect(MONGODB_URI)
-    .then(() => {
-      console.log(`Connected, `, MONGODB_URI);
-    })
-    .catch((err) => {
-      console.log("Failed connecting to MONGO");
-      console.log(err);
-    });
   console.log(`Server running on port ${PORT}`);
   console.log(`http://localhost:${PORT}`);
 });
