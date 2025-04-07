@@ -11,12 +11,14 @@ import categoryRoutes from "./routes/categories.js";
 import { mustBeDeveloper } from "./middleware/test.js";
 import { userContextMiddleware } from "./middleware/user.js";
 import { adminAuth } from "./middleware/auth.js";
+import orderRoutes from "./routes/orders.js";
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/hakim-livs";
+const MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://localhost:27017/hakim-livs";
 
 // Middleware
 app.use(cors("*"));
@@ -32,9 +34,9 @@ app.use(async (req, res, next) => {
   console.log("Has token:", req.cookies['hakim-livs-token'] !== undefined)
   console.log("USER:", req.user)
 
-  res.on('finish', () => {
-    console.log(`- END of ${req.method}${req.url} -`)
-  })
+  res.on("finish", () => {
+    console.log(`- END of ${req.method}${req.url} -`);
+  });
 
   next();
 });
@@ -81,4 +83,4 @@ start()
 //   console.log(`http://localhost:${PORT}`)
 // });
 
-// 
+//

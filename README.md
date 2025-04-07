@@ -110,6 +110,11 @@ For information on authentication, see the authentication section.
 | POST | /api/auth/login | Get an existing user and token | Requires JSON object containing email and password. Sets a token-cookie.
 | GET | /api/auth/me | Checks for the token-cookie and returns user data if it's valid | Must have token-cookie
 
+### Order endpoints
+| METHOD | URL | WHAT IT'S FOR | INFO |
+|--------|-----|---------------|------|
+| POST | /api/orders | Create an order | Required JSON object. See /api/ for more details.
+
 ### Test endpoints
 
 | METHOD | URL | WHAT IT'S FOR | INFO |
@@ -127,6 +132,7 @@ For information on authentication, see the authentication section.
 | POST | /api/test/users/login | Get existing user with token | Requires JSON object with email and password. Sets token-cookie.
 | GET | /api/test/users/me | Get user data if valid token-cookie exists | Must have valid token-cookie
 | GET | /api/test/users/logout | Deletes token-cookie ||
+| POST | /api/test/addOrders | Create multiple orders at once | Requires JSON array of new order objects.
 | POST | /api/test/insertDocs | Insert several documents at once | Ability to purge all documents before creating (see below)
 
 ### Using the insertDocs test route for quick and easy testing

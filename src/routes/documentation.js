@@ -91,6 +91,25 @@ documentRoute({
     url: "/api/auth/me"
 })
 
+// Order routes
+documentRoute({
+    name: "Add order",
+    method: "POST",
+    url: "/api/orders",
+    body: {
+        products: [
+            {
+                productId: "Object id goes here",
+                quantity: 1
+            },
+            {
+                productId: "Object id goes here",
+                quantity: 1
+            }
+        ]
+    }
+})
+
 // Test routes
 documentRoute({
     name: "Add a product",
@@ -151,7 +170,13 @@ documentRoute({
 })
 
 documentRoute({
-    name: "Delete all products, users and categories",
+    name: "Delete all orders",
+    method: "DELETE",
+    url: "/api/test/purgeOrders"
+})
+
+documentRoute({
+    name: "Delete all products, users, orders, and categories",
     method: "DELETE",
     url: "/api/test/purgeAll"
 })
@@ -193,6 +218,34 @@ documentRoute({
     name: "Log out (test)",
     method: "GET",
     url: "/api/test/users/logout"
+})
+
+documentRoute({
+    name: "Add orders (test)",
+    method: "POST",
+    url: "/api/test/addOrders",
+    body: [
+        {
+            products: [
+                {
+                    productId: "Object id goes here",
+                    quantity: 1
+                },
+                {
+                    productId: "Object id goes here",
+                    quantity: 1
+                }
+            ]
+        },
+        {
+            products: [
+                {
+                    productId: "Object id goes here",
+                    quantity: 1
+                }
+            ]
+        }
+    ]
 })
 
 documentRoute({

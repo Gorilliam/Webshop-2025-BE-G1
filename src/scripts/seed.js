@@ -2,12 +2,14 @@ import fs from 'fs'
 import Category from '../models/Category.js'
 import Product from '../models/Product.js'
 import User from '../models/User.js'
+import Order from '../models/Order.js'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'; dotenv.config();
 
 const categories = JSON.parse(fs.readFileSync('./src/data/categories.json'))
 const products = JSON.parse(fs.readFileSync('./src/data/products.json'))
 const users = JSON.parse(fs.readFileSync('./src/data/users.json'))
+const orders = JSON.parse(fs.readFileSync('./src/data/orders.json'))
 
 seed()
 
@@ -29,9 +31,11 @@ async function seed() {
     await Product.deleteMany({})
     await Category.deleteMany({})
     await User.deleteMany({})
+    await Order.deleteMany({})
     await seedOneModel("category", Category, categories)
     await seedOneModel("product", Product, products)
     await seedOneModel("user", User, users)
+    await seedOneModel("order", Order, orders)
     console.log("DONE")
     process.exit()
 }
