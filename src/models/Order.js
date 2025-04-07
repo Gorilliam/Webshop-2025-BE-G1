@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose"
+import Product from './Product.js'
 
 // Order schema
 const orderSchema = new mongoose.Schema(
@@ -6,10 +7,12 @@ const orderSchema = new mongoose.Schema(
     totalPrice: {
       type: Number,
       required: true,
+      default: 0
     },
     VAT: {
       type: Number,
       required: true,
+      default: 0
     },
     status: {
       type: String,
@@ -27,8 +30,7 @@ const orderSchema = new mongoose.Schema(
     products: [
       {
         productId: { type: mongoose.Schema.Types.ObjectId, ref: "Product" },
-        quantity: { type: Number, required: true },
-        price: { type: Number, required: true }, // Product price
+        quantity: { type: Number, required: true }
       },
     ],
   },
@@ -44,20 +46,22 @@ orderSchema.pre("save", function (next) {
 });
 
 // Pre hook for calculating totalPrice and VAT
-orderSchema.pre("save", function (next) {
-  if (this.items && this.items.length > 0) {
-    // Calculating the total price (excluding VAT)
-    this.totalPrice = this.items.reduce(
-      (total, item) => total + item.price * item.quantity,
-      0
-    );
+orderSchema.pre("save", async function (next) {
 
-    // Calculating VAT (e.g., 12%)
-    this.VAT = this.totalPrice * 0.12; // Example for 12% VAT
+  // Calculating the total price (excluding VAT)
+  for (const product of this.products) {
+    const foundProduct = await Product.findById(product.productId)
+    if (!foundProduct) throw new Error({
+      message: `This product id did not match any document in the database: "${product.productId}"`
+    })
+    this.totalPrice += foundProduct.price * product.quantity;
   }
+
+  // Calculating VAT (e.g., 12%)
+  this.VAT = this.totalPrice * 0.12; // Example for 12% VAT
   next();
 });
 
 const Order = mongoose.model("Order", orderSchema);
 
-module.exports = Order;
+export default Order
