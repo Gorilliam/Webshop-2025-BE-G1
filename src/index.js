@@ -8,6 +8,7 @@ import productRoutes from "./routes/products.js";
 import testRouter from "./routes/test.js";
 import apiDocumentation from "./routes/documentation.js";
 import categoryRoutes from "./routes/categories.js";
+import orderRoutes from "./routes/orders.js";
 import { mustBeDeveloper } from "./middleware/test.js";
 import { adminAuth } from "./middleware/auth.js";
 
