@@ -1,8 +1,15 @@
 import { Router } from "express";
-//Import Order from model once it has been created.
+import Order from "../models/Order";
 
 const orderRoutes = Router()
 
-orderRoutes.get("/")
+orderRoutes.get("/", async (req, res) => {
+    try {
+        const orders = await Order.find().populate("products.productId")  // This will get all orders
+        res.json(orders);
+    } catch (error) {
+        res.status(500).json({ error: error?.message });
+    }
+})
 
 export default orderRoutes;
