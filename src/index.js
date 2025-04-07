@@ -10,6 +10,7 @@ import apiDocumentation from "./routes/documentation.js";
 import categoryRoutes from "./routes/categories.js";
 import { mustBeDeveloper } from "./middleware/test.js";
 import { userContextMiddleware } from "./middleware/user.js";
+import { adminAuth } from "./middleware/auth.js";
 
 dotenv.config();
 
@@ -46,6 +47,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
+app.use("/api/orders", adminAuth, orderRoutes )
 
 async function start() {
   try {
