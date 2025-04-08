@@ -6,6 +6,7 @@ const orderSchema = new mongoose.Schema(
   {
     // We use that field into pre hook so I left it as well here (not sure)
     orderID: {
+      //It's required as String, let me know if I'm wrong with that type
       type: String,
       unique: true,
     },
