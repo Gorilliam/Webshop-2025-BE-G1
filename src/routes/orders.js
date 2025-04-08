@@ -23,17 +23,34 @@ orderRoutes.post("/", async (req, res) => {
   }
 });
 
-orderRoutes.put("/:orderID", async (req, res) => {
+// you can just write the appropriate status for order and it changes directly without writing req.body into postman
+orderRoutes.put("/:orderID/:status", async (req, res) => {
   try {
-    const { status } = req.body;
+    const { orderID, status } = req.params;
+
+    // Validate the status
+    const allowedStatuses = [
+      "pending",
+      "sent",
+      "delivered",
+      "completed",
+      "cancelled",
+    ];
+    if (!allowedStatuses.includes(status)) {
+      return res.status(400).json({ error: "Invalid status" });
+    }
+
     const updateStatusOrder = await Order.findOneAndUpdate(
-      { orderID: req.params.orderID },
+      { orderID }, // Find the order by orderID
       { status },
       { new: true }
     );
+
+    // If the order is not found, return a 404 error
     if (!updateStatusOrder) {
       return res.status(404).json({ error: "Order not found" });
     }
+
     res.json(updateStatusOrder);
   } catch (error) {
     console.log(error);
