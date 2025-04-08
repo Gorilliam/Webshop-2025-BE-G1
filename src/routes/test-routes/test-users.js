@@ -57,23 +57,19 @@ testUsersRouter.post('/users/login', async (req, res) => {
 })
 
 testUsersRouter.get('/users/me', async (req, res) => {
-    try {
-        const token = req.cookies['hakim-livs-token']
-        if (!token) throw { message: "You do not have a cookie called 'hakim-livs-token'." }
+  try {
+    const userData = await getUserDataFromToken(req)
 
-        // verify token
-        const userData = jwt.verify(token, process.env.JWT_SECRET || "livs-hakim")
-
-        // find user
-        const foundUser = await User.findOne({ email: userData.email })
-        if (!foundUser) throw { message: "The cookie contained a valid token but it did not reference an existing user. Maybe the user no longer exists, or has changed their email." };
-
-        res.json(toUserDTO(foundUser))
-
-    } catch (error) {
-        res.status(400)
-        res.json({ error: error?.message })
+    if (userData.error) {
+      res.status(userData.status)
+      res.json(userData)
+      return
     }
+
+    res.json(userData)
+  } catch (error) {
+    res.status(500).json({ error: error?.message });
+  }
 })
 
 testUsersRouter.get('/users/logout', async (req, res) => {
