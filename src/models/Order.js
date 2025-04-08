@@ -1,18 +1,44 @@
-import mongoose from "mongoose"
-import Product from './Product.js'
+import mongoose from "mongoose";
+import Product from "./Product.js";
 
 // Order schema
 const orderSchema = new mongoose.Schema(
   {
+    // We use that field into pre hook so I left it as well here (not sure)
+    orderID: {
+      type: String,
+      unique: true,
+    },
+    firstName: {
+      type: String,
+      required: true,
+    },
+    lastName: {
+      type: String,
+      required: true,
+    },
+    address: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+    },
+    // In case if user writes different kinds of format like +46... spaces, parentheses etc.
+    phoneNumber: {
+      type: String,
+      required: true,
+    },
     totalPrice: {
       type: Number,
       required: true,
-      default: 0
+      default: 0,
     },
     VAT: {
       type: Number,
       required: true,
-      default: 0
+      default: 0,
     },
     status: {
       type: String,
@@ -30,7 +56,7 @@ const orderSchema = new mongoose.Schema(
     products: [
       {
         productId: { type: mongoose.Schema.Types.ObjectId, ref: "Product" },
-        quantity: { type: Number, required: true }
+        quantity: { type: Number, required: true },
       },
     ],
   },
@@ -47,13 +73,13 @@ orderSchema.pre("save", function (next) {
 
 // Pre hook for calculating totalPrice and VAT
 orderSchema.pre("save", async function (next) {
-
   // Calculating the total price (excluding VAT)
   for (const product of this.products) {
-    const foundProduct = await Product.findById(product.productId)
-    if (!foundProduct) throw new Error({
-      message: `This product id did not match any document in the database: "${product.productId}"`
-    })
+    const foundProduct = await Product.findById(product.productId);
+    if (!foundProduct)
+      throw new Error({
+        message: `This product id did not match any document in the database: "${product.productId}"`,
+      });
     this.totalPrice += foundProduct.price * product.quantity;
   }
 
@@ -64,4 +90,4 @@ orderSchema.pre("save", async function (next) {
 
 const Order = mongoose.model("Order", orderSchema);
 
-export default Order
+export default Order;
