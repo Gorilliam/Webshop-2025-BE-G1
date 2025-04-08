@@ -38,7 +38,7 @@ testUsersRouter.post('/users', async (req, res) => {
 
 testUsersRouter.post('/users/login', async (req, res) => {
     try {
-        const foundUser = await User.findOne({ email: req.body.email }).lean()
+        const foundUser = await User.findOne({ email: req.body.email })
         if (!foundUser) throw { message: "Email doesn't match any documents." };
         const validPassword = await bcrypt.compare(req.body.password, foundUser.password)
         if (!validPassword) throw { message: "Password is wrong." }

@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'; dotenv.config();
 import User from '../models/User.js'
+import Order from '../models/Order.js'
 import jwt from 'jsonwebtoken'
 
 export function getToken(req) {
@@ -34,11 +35,18 @@ export async function getUserDataFromToken(req) {
         return { status: 400, error: "Your token is invalid." }
     }
 
-    const foundUser = await User.findOne({ email: userData.email }).lean()
+    const foundUser = await User.findOne({ email: userData.email })
 
     if (!foundUser) {
         return { status: 404, error: "You token is valid but did not match an existing user. Maybe your email has changed?" }
     }
 
-    return foundUser
+    // get previously used addresses and phone numbers
+    const orders = await Order.find({ email: foundUser.email })
+    const previouslyUsed = {
+        addresses: [...new Set(orders.map(o => o.address))],
+        phoneNumbers: [...new Set(orders.map(o => o.phoneNumber))]
+    }
+
+    return {...foundUser['_doc'], previouslyUsed}
 }
