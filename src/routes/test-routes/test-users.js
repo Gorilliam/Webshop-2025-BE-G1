@@ -10,7 +10,7 @@ const testUsersRouter = Router()
 testUsersRouter.get('/users', async (req, res) => {
     try {    
         console.log('finding users')
-        const users = await User.find({})
+        const users = await User.find({}).populate('orders')
         res.json(users)
     } catch (error) {
         console.log(error)

@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 
 const userSchema = new mongoose.Schema(
   {
@@ -26,6 +26,11 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    orders: {
+      type: [mongoose.Schema.ObjectId],
+      ref: 'order',
+      default: []
+    }
   },
   {
     timestamps: true,

@@ -1,162 +1,190 @@
 [
   {
-    "totalPrice": 119.96,
-    "VAT": 14.40,
+    "firstName": "Erik",
+    "lastName": "Andersson",
+    "address": "Storgatan 12, 111 31 Stockholm",
+    "email": "erik.andersson@example.com",
+    "phoneNumber": "0701234567",
     "status": "pending",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439011",
-        "quantity": 2,
-        "price": 29.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d101",  
+        "quantity": 2
       },
       {
-        "productId": "507f1f77bcf86cd799439012",
-        "quantity": 1,
-        "price": 59.98
+        "productId": "65a1b2c3d4e5f6a7b8c9d102",  
+        "quantity": 1
       }
-    ],
-    "createdAt": "2023-05-15T09:30:00Z",
-    "updatedAt": "2023-05-15T09:30:00Z"
+    ]
   },
   {
-    "totalPrice": 299.95,
-    "VAT": 35.99,
+    "firstName": "Anna",
+    "lastName": "Johansson",
+    "address": "Kungsportsavenyn 5, 411 36 Göteborg",
+    "email": "anna.johansson@example.com",
+    "phoneNumber": "0723456789",
     "status": "processing",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439013",
-        "quantity": 1,
-        "price": 199.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d105",  
+        "quantity": 1
       },
       {
-        "productId": "507f1f77bcf86cd799439014",
-        "quantity": 2,
-        "price": 49.98
+        "productId": "65a1b2c3d4e5f6a7b8c9d126",  
+        "quantity": 2
       }
-    ],
-    "createdAt": "2023-05-16T11:45:00Z",
-    "updatedAt": "2023-05-16T11:45:00Z"
+    ]
   },
   {
-    "totalPrice": 79.98,
-    "VAT": 9.60,
+    "firstName": "Lars",
+    "lastName": "Svensson",
+    "address": "Lilla Torg 6, 211 34 Malmö",
+    "email": "lars.svensson@example.com",
+    "phoneNumber": "0734567890",
     "status": "shipped",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439015",
-        "quantity": 3,
-        "price": 26.66
+        "productId": "65a1b2c3d4e5f6a7b8c9d107",  
+        "quantity": 3
+      },
+      {
+        "productId": "65a1b2c3d4e5f6a7b8c9d124",  
+        "quantity": 1
       }
-    ],
-    "createdAt": "2023-05-17T14:20:00Z",
-    "updatedAt": "2023-05-18T10:15:00Z"
+    ]
   },
   {
-    "totalPrice": 449.97,
-    "VAT": 54.00,
+    "firstName": "Maria",
+    "lastName": "Gustafsson",
+    "address": "Drottninggatan 22, 752 21 Uppsala",
+    "email": "maria.gustafsson@example.com",
+    "phoneNumber": "0765432109",
     "status": "delivered",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439016",
-        "quantity": 1,
-        "price": 349.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d111",  
+        "quantity": 4
       },
       {
-        "productId": "507f1f77bcf86cd799439017",
-        "quantity": 1,
-        "price": 99.98
+        "productId": "65a1b2c3d4e5f6a7b8c9d130",  
+        "quantity": 1
       }
-    ],
-    "createdAt": "2023-05-10T08:10:00Z",
-    "updatedAt": "2023-05-12T16:30:00Z"
+    ]
   },
   {
-    "totalPrice": 59.99,
-    "VAT": 7.20,
+    "firstName": "Johan",
+    "lastName": "Nilsson",
+    "address": "Östra Hamngatan 18, 411 10 Göteborg",
+    "email": "johan.nilsson@example.com",
+    "phoneNumber": "0712345678",
     "status": "cancelled",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439018",
-        "quantity": 1,
-        "price": 59.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d120",  
+        "quantity": 2
       }
-    ],
-    "createdAt": "2023-05-18T13:25:00Z",
-    "updatedAt": "2023-05-18T15:40:00Z"
+    ]
   },
   {
-    "totalPrice": 159.96,
-    "VAT": 19.20,
+    "firstName": "Emma",
+    "lastName": "Karlsson",
+    "address": "Vasagatan 40, 101 37 Stockholm",
+    "email": "emma.karlsson@example.com",
+    "phoneNumber": "0709876543",
     "status": "processing",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439019",
-        "quantity": 4,
-        "price": 39.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d103",  
+        "quantity": 1
+      },
+      {
+        "productId": "65a1b2c3d4e5f6a7b8c9d115",  
+        "quantity": 2
+      },
+      {
+        "productId": "65a1b2c3d4e5f6a7b8c9d138",  
+        "quantity": 1
       }
-    ],
-    "createdAt": "2023-05-19T10:30:00Z",
-    "updatedAt": "2023-05-19T10:30:00Z"
+    ]
   },
   {
-    "totalPrice": 229.93,
-    "VAT": 27.60,
+    "firstName": "Anders",
+    "lastName": "Eriksson",
+    "address": "Stortorget 3, 222 29 Lund",
+    "email": "anders.eriksson@example.com",
+    "phoneNumber": "0721098765",
     "status": "pending",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439020",
-        "quantity": 1,
-        "price": 129.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d108",  
+        "quantity": 1
       },
       {
-        "productId": "507f1f77bcf86cd799439021",
-        "quantity": 2,
-        "price": 49.97
+        "productId": "65a1b2c3d4e5f6a7b8c9d109",  
+        "quantity": 2
       }
-    ],
-    "createdAt": "2023-05-20T16:45:00Z",
-    "updatedAt": "2023-05-20T16:45:00Z"
+    ]
   },
   {
-    "totalPrice": 89.97,
-    "VAT": 10.80,
+    "firstName": "Sofia",
+    "lastName": "Larsson",
+    "address": "Norra Vallgatan 64, 211 22 Malmö",
+    "email": "sofia.larsson@example.com",
+    "phoneNumber": "0732109876",
     "status": "shipped",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439022",
-        "quantity": 3,
-        "price": 29.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d112",  
+        "quantity": 1
+      },
+      {
+        "productId": "65a1b2c3d4e5f6a7b8c9d117",  
+        "quantity": 1
+      },
+      {
+        "productId": "65a1b2c3d4e5f6a7b8c9d113",  
+        "quantity": 1
       }
-    ],
-    "createdAt": "2023-05-21T09:15:00Z",
-    "updatedAt": "2023-05-22T11:20:00Z"
+    ]
   },
   {
-    "totalPrice": 349.98,
-    "VAT": 42.00,
+    "firstName": "Peter",
+    "lastName": "Olsson",
+    "address": "Köpmangatan 9, 602 24 Norrköping",
+    "email": "peter.olsson@example.com",
+    "phoneNumber": "0707654321",
     "status": "delivered",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439023",
-        "quantity": 2,
-        "price": 174.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d116",  
+        "quantity": 2
+      },
+      {
+        "productId": "65a1b2c3d4e5f6a7b8c9d119",  
+        "quantity": 1
+      },
+      {
+        "productId": "65a1b2c3d4e5f6a7b8c9d129",  
+        "quantity": 1
       }
-    ],
-    "createdAt": "2023-05-12T14:00:00Z",
-    "updatedAt": "2023-05-15T13:25:00Z"
+    ]
   },
   {
-    "totalPrice": 199.95,
-    "VAT": 24.00,
+    "firstName": "Linda",
+    "lastName": "Persson",
+    "address": "Södra Förstadsgatan 15, 214 22 Malmö",
+    "email": "linda.persson@example.com",
+    "phoneNumber": "0765432190",
     "status": "processing",
     "products": [
       {
-        "productId": "507f1f77bcf86cd799439024",
-        "quantity": 5,
-        "price": 39.99
+        "productId": "65a1b2c3d4e5f6a7b8c9d131",  
+        "quantity": 1
+      },
+      {
+        "productId": "65a1b2c3d4e5f6a7b8c9d122",  
+        "quantity": 3
       }
-    ],
-    "createdAt": "2023-05-22T17:30:00Z",
-    "updatedAt": "2023-05-22T17:30:00Z"
+    ]
   }
 ]

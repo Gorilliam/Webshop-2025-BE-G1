@@ -103,6 +103,11 @@ documentRoute({
     method: "POST",
     url: "/api/orders",
     body: {
+        firstName: "first name",
+        lastName: "last name",
+        address: "address",
+        email: "email",
+        phoneNumber: "phone number",
         products: [
             {
                 productId: "Object id goes here",
@@ -232,6 +237,11 @@ documentRoute({
     url: "/api/test/addOrders",
     body: [
         {
+            firstName: "first name",
+            lastName: "last name",
+            address: "address",
+            email: "email",
+            phoneNumber: "phone number",
             products: [
                 {
                     productId: "Object id goes here",
@@ -244,6 +254,11 @@ documentRoute({
             ]
         },
         {
+            firstName: "first name",
+            lastName: "last name",
+            address: "address",
+            email: "email",
+            phoneNumber: "phone number",
             products: [
                 {
                     productId: "Object id goes here",
