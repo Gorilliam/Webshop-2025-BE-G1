@@ -21,32 +21,7 @@ const MONGODB_URI =
   process.env.MONGODB_URI || "mongodb://localhost:27017/hakim-livs";
 
 // Middleware
-const allowedOrigins = [
-  `http://localhost:5500`, 
-  `http://localhost:5501`, 
-  `http://localhost:5502`, 
-  `http://localhost:5503`, 
-  `http://localhost:5504`, 
-  `http://localhost:5505`, 
-  `http://127.0.0.1:5500`, 
-  `http://127.0.0.1:5501`, 
-  `http://127.0.0.1:5502`, 
-  `http://127.0.0.1:5503`, 
-  `http://127.0.0.1:5504`, 
-  `http://127.0.0.1:5505`, 
-  `http://localhost:${PORT}`, 
-  'https://webshop-2025-fe-g1.vercel.app/'
-];
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true
-}));
+app.use(cors())
 app.use(express.json());
 app.use(cookieParser());
 app.use(userContextMiddleware)
