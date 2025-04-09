@@ -44,7 +44,7 @@ router.get("/me", async (req, res) => {
 });
 
 //TODO Login
-router.post("/users/login", async (req, res) => {
+router.post("/login", async (req, res) => {
   try {
     const foundUser = await User.findOne({ email: req.body.email }).lean();
     if (!foundUser) {
