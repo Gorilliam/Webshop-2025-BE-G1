@@ -21,7 +21,7 @@ const MONGODB_URI =
   process.env.MONGODB_URI || "mongodb://localhost:27017/hakim-livs";
 
 // Middleware
-app.use(cors("*"));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 app.use(userContextMiddleware)
@@ -46,6 +46,7 @@ app.get("/api", apiDocumentation);
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/users", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
