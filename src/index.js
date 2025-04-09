@@ -22,6 +22,12 @@ const MONGODB_URI =
 
 // Middleware
 const allowedOrigins = [
+  `http://localhost:5500`, 
+  `http://localhost:5501`, 
+  `http://localhost:5502`, 
+  `http://localhost:5503`, 
+  `http://localhost:5504`, 
+  `http://localhost:5505`, 
   `http://localhost:${PORT}`, 
   'https://webshop-2025-fe-g1.vercel.app/'
 ];
