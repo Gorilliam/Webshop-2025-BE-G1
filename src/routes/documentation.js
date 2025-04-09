@@ -64,7 +64,7 @@ documentRoute({
 
 // User routes
 documentRoute({
-    name: "Sign up (sets token cookie)",
+    name: "Sign up (returns userData and token)",
     method: "POST",
     url: "/api/auth/signup",
     body: {
@@ -76,7 +76,7 @@ documentRoute({
 })
 
 documentRoute({
-    name: "Log in (sets token cookie)",
+    name: "Log in (returns userData and token)",
     method: "POST",
     url: "/api/auth/login",
     body: {
