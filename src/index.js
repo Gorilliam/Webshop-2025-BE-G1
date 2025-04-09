@@ -21,7 +21,7 @@ const MONGODB_URI =
   process.env.MONGODB_URI || "mongodb://localhost:27017/hakim-livs";
 
 // Middleware
-app.use(cors("*"));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 app.use(userContextMiddleware)

@@ -80,17 +80,17 @@ testRouter.post('/insertDocs', async (req, res) => {
     }
 })
 
-const testData = {
-    purgeAllFirst: true,
-    categories: read('categories'),
-    products: read('products'),
-    users: read('users'),
-    orders: read('orders')
-}
+// const testData = {
+//     purgeAllFirst: true,
+//     categories: read('categories'),
+//     products: read('products'),
+//     users: read('users'),
+//     orders: read('orders')
+// }
 
-testRouter.get('/testData', (req, res) => {
-    res.json(testData)
-})
+// testRouter.get('/testData', (req, res) => {
+//     res.json(testData)
+// })
 
 
 export default testRouter
