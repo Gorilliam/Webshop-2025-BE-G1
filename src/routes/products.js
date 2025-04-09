@@ -104,7 +104,7 @@ productRoutes.delete("/", adminAuth, async (req, res) => {
 //TODO Delete product (admin only) Using URL param
 productRoutes.delete("/:id", adminAuth, async (req, res) => {
   try {
-    let deletedProduct = await Product.findById(req.params.id);
+    let deletedProduct = await Product.findByIdAndDelete(req.params.id);
 
     if (!deletedProduct) {
       res.status(404)
