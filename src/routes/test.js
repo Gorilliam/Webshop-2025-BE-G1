@@ -11,7 +11,6 @@ import testUsersRouter from "./test-routes/test-users.js";
 import testOrdersRouter from "./test-routes/test-orders.js";
 
 import fs from 'fs'
-const read = path => JSON.parse(fs.readFileSync(`./src/data/${path}.json`))
 
 const testRouter = Router()
 
@@ -80,17 +79,31 @@ testRouter.post('/insertDocs', async (req, res) => {
     }
 })
 
-// const testData = {
-//     purgeAllFirst: true,
-//     categories: read('categories'),
-//     products: read('products'),
-//     users: read('users'),
-//     orders: read('orders')
-// }
+function tryReadingData(name) {
+    try {
+        const data = JSON.parse(fs.readFileSync(`./src/data/${name}.json`))
+        return data
+    } catch (_) {
+        try {
+            const data = JSON.parse(fs.readFileSync(`./data/${name}.json`))
+            return data
+        } catch (_) {
+            return []
+        }
+    }
+}
 
-// testRouter.get('/testData', (req, res) => {
-//     res.json(testData)
-// })
+const testData = {
+    purgeAllFirst: true,
+    categories: tryReadingData('categories'),
+    products: tryReadingData('products'),
+    users: tryReadingData('users'),
+    orders: tryReadingData('orders')
+}
+
+testRouter.get('/testData', (req, res) => {
+    res.json(testData)
+})
 
 
 export default testRouter

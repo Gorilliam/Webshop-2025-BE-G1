@@ -14,6 +14,18 @@ orderRoutes.get("/", async (req, res) => {
 
 orderRoutes.post("/", async (req, res) => {
   try {
+    if (!req.body?.products) {
+      res.status(400)
+      res.json({ error: "Request body must be an object with the order data and a property called 'products'. See /api/ for more details." })
+      return
+    }
+
+    if (req.body.products.length < 1) {
+      res.status(400)
+      res.json({ error: "The order must contain at least one product." })
+      return
+    }
+
     const newOrder = await Order.create(req.body);
     res.json(newOrder);
   } catch (error) {
