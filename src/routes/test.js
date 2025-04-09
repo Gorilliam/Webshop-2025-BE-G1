@@ -80,17 +80,20 @@ testRouter.post('/insertDocs', async (req, res) => {
 })
 
 function tryReadingData(name) {
-    try {
-        const data = JSON.parse(fs.readFileSync(`./src/data/${name}.json`))
-        return data
-    } catch (_) {
+    const paths = [
+        `./src/data/${name}.json`,
+        `./data/${name}.json`,
+        `./dist/data/${name}.json`,
+    ]
+
+    for (const path of paths) {
         try {
-            const data = JSON.parse(fs.readFileSync(`./data/${name}.json`))
+            const data = JSON.parse(fs.readFileSync(path))
             return data
-        } catch (_) {
-            return []
-        }
+        } catch (_) {}
     }
+
+    return []
 }
 
 const testData = {
