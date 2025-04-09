@@ -96,5 +96,12 @@
         "password": "EllaStrong555!",
         "email": "ella.pettersson@example.com",
         "isAdmin": false
+    },
+    {
+        "email": "Hakim@livs.se",
+        "firstName": "Hakim",
+        "lastName": "Admin",
+        "password": "jagäradmin",
+        "isAdmin": true
     }
 ]
