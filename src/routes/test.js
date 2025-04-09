@@ -88,7 +88,7 @@ function tryReadingData(name) {
 
     for (const path of paths) {
         try {
-            const data = JSON.parse(fs.readFileSync(path))
+            const data = JSON.parse(fs.readFileSync(path), null, 2)
             return data
         } catch (_) {}
     }

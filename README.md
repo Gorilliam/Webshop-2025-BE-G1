@@ -88,6 +88,7 @@ The app is powered by mongoose and uses the following schemas:
 | phoneNumber | string | required
 | address | string | required
 | prodcuts | array of objects which have the properties "productId" (ObjectId) and "quantity" (number) | required
+| user | ObjectId (user) | ___optional!___ you don't have to be logged in to place an order
 
 
 ## Endpoints

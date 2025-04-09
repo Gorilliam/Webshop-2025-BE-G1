@@ -1,5 +1,6 @@
 import { Router } from "express";
 import Order from "../models/Order.js";
+import User from "../models/User.js";
 
 const orderRoutes = Router();
 
@@ -27,6 +28,11 @@ orderRoutes.post("/", async (req, res) => {
       res.status(400);
       res.json({ error: "The order must contain at least one product." });
       return;
+    }
+
+    if (req.body.user) {
+      const foundUser = await User.findById(req.body.user)
+      if (!foundUser) return res.status(404).json({ error: `Object id did not match any users in the database: "${req.body.user}"`});
     }
 
     const newOrder = await Order.create(req.body);

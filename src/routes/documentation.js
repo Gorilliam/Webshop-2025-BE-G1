@@ -108,6 +108,7 @@ documentRoute({
         address: "address",
         email: "email",
         phoneNumber: "phone number",
+        user: "OPTIONAL objectId of the user",
         products: [
             {
                 productId: "Object id goes here",
@@ -242,6 +243,7 @@ documentRoute({
             address: "address",
             email: "email",
             phoneNumber: "phone number",
+            user: "OPTIONAL objectId of the user",
             products: [
                 {
                     productId: "Object id goes here",
@@ -259,6 +261,7 @@ documentRoute({
             address: "address",
             email: "email",
             phoneNumber: "phone number",
+            user: "OPTIONAL objectId of the user",
             products: [
                 {
                     productId: "Object id goes here",
