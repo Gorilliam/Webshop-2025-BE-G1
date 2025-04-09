@@ -1,5 +1,6 @@
 [
     {
+        "_id": "67f628f2e568363d6860e95b",
         "name": "Finkrossade tomater",
         "price": 25.00,
         "image": "https://productimages.motatos.com/MS250161/ms250161_1-92537e81-098c-407e-9716-955925b959de.png?tr=w-160%2Cbg-ffffff&itok=zf1TvFqu",
@@ -7,11 +8,12 @@
         "amount": 400,
         "brand": "Fontana",
         "discount": 1,
-        "description": "Lorem borem",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "ätbart"
+        "category": "67f636f7d91ab5a38cf213c1"
     },
     {
+        "_id": "67efa09b2fb3b7701d73b8d7",
         "name": "Grönsakssoppa",
         "price": 19.00,
         "image": "https://productimages.motatos.com/MS220061/ms220061_1-c766b93d-dc22-4dc9-9041-132a09c2bce1.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -19,11 +21,12 @@
         "amount": 400,
         "brand": "Heinz",
         "discount": 1,
-        "description": "Lorem borem erem berem Lorem borem erem berem Lorem borem erem berem Lorem borem erem berem Lorem borem erem berem.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "ätbart"
+        "category": "67f636f7d91ab5a38cf213c1"
     },
     {
+        "_id": "67efa09c2fb3b7701d73b8da",
         "name": "Coca Cola",
         "price": 15.90,
         "image": "https://productimages.motatos.com/MS212749/ms212749jpg-e5057336-d78d-4dea-b058-a7c3fc3e271b.jpg?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -33,9 +36,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "drickbart"
+        "category": "67f636f7d91ab5a38cf213bb"
     },
     {
+        "_id": "67efa09c2fb3b7701d73b8dd",
         "name": "Majonnäs äkta",
         "price": 24,
         "image": "https://productimages.motatos.com/MS203454/ms203454_1-d087a5a8-791c-43b3-98b7-3844ef6703f9.png?tr=n-product&itok=5Xi-KRnT",
@@ -43,11 +47,12 @@
         "amount": 235,
         "brand": "Hellmann's",
         "discount": 1,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "ätbart"
+        "category": "67f636f7d91ab5a38cf213c3"
     },
     {
+        "_id": "67efa09c2fb3b7701d73b8e0",
         "name": "Dino Matta",
         "price": 250.00,
         "image": "https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839PA4459PT28D165676719W10000H7574/views/1,width=800,height=800,appearanceId=839,backgroundColor=F2F2F2/soet-dino-klistermaerke.jpg",
@@ -55,11 +60,12 @@
         "amount": 1,
         "brand": "Dino AB",
         "discount": 1,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "hushåll"
+        "category": "67f636f7d91ab5a38cf213c7"
     },
     {
+        "_id": "67efa09c2fb3b7701d73b8e3",
         "name": "Fryspåsar",
         "price": 10,
         "image": "https://productimages.motatos.com/MS246146/ms246146_1-5759becf-0666-4a4d-89d7-94d7eaf760a0.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -69,9 +75,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "hushåll"
+        "category": "67f636f7d91ab5a38cf213c7"
     },
     {
+        "_id": "67efa09c2fb3b7701d73b8e6",
         "name": "Stålkastrull 5l",
         "price": 295,
         "image": "https://productimages.motatos.com/MS250213/ms250213_1-9fbc9a16-a007-4a9e-bb97-939b6eda5ea5.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -79,23 +86,25 @@
         "amount": 1,
         "brand": "Orrefors Jernverk",
         "discount": 1,
-        "description": "Lorem borem",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "hushåll"
+        "category": "67f636f7d91ab5a38cf213c7"
     },
     {
+        "_id": "67efa09d2fb3b7701d73b8e9",
         "name": "Havregryn",
         "price": 15,
         "image": "https://productimages.motatos.com/MS235187/ms235187_1234-2a5862b9-4ff9-4b3d-950e-7cb987366372.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
         "unit": "g",
         "amount": 750,
-        "brand": "Fontana",
+        "brand": "Axafools",
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "ätbart"
+        "category": "67f636f7d91ab5a38cf213c3"
     },
     {
+        "_id": "67efa09d2fb3b7701d73b8ec",
         "name": "Mango Soft & Chewy",
         "price": 15,
         "image": "https://productimages.motatos.com/MS221897/ms221897_1-c367e021-a875-4b74-a9cc-be4dc8d81397.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -105,9 +114,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "ätbart"
+        "category": "67f636f7d91ab5a38cf213c3"
     },
     {
+        "_id": "67f628f4e568363d6860e976",
         "name": "Polly Tropical 150g",
         "price": 15,
         "image": "https://productimages.motatos.com/MS249243/ms249243_1-656f89bf-efa8-4221-a13e-3ab05761459e.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -115,11 +125,12 @@
         "amount": 150,
         "brand": "Cloetta",
         "discount": 1,
-        "description": "dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 50,
-        "category": "ätbart"
+        "category": "67f636f7d91ab5a38cf213c5"
     },
     {
+        "_id": "67f628f4e568363d6860e979",
         "name": "Tortillabröd 10-pack",
         "price": 22,
         "image": "https://productimages.motatos.com/MS224946/546251-31f222fc-9163-4b39-8f48-291701cb13ad.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -127,11 +138,12 @@
         "amount": 150,
         "brand": "Santa Maria",
         "discount": 1,
-        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 20,
-        "category": "veganskt"
+        "category": "67f636f6d91ab5a38cf213b7"
     },
     {
+        "_id": "67f628f4e568363d6860e97c",
         "name": "Omega-3 Lemon",
         "price": 99,
         "image": "https://productimages.motatos.com/MS247063/ms247063_2-4274fd60-0b73-4593-b1b3-1881262dec58.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -139,11 +151,12 @@
         "amount": 60,
         "brand": "VitaYummy",
         "discount": 1,
-        "description": "riatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 2,
-        "category": "veganskt"
+        "category": "67f636f7d91ab5a38cf213c3"
     },
     {
+        "_id": "67f628f5e568363d6860e97f",
         "name": "Vegansk Chilimayo",
         "price": 24.50,
         "image": "https://productimages.motatos.com/MS219387/heinz-3df31e8f-d5bc-4c1c-9972-ba72c694fc87.jpg?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -153,9 +166,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 2,
-        "category": "veganskt"
+        "category": "67f636f7d91ab5a38cf213cb"
     },
     {
+        "_id": "67f628f5e568363d6860e982",
         "name": "Toalettpapper Comfort 8-pack",
         "price": 39,
         "image": "https://productimages.motatos.com/MS224715/ms224715_1-c0e74b6a-cf7c-487c-af94-6af77af5e965.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -165,9 +179,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 2,
-        "category": "hushåll"
+        "category": "67f636f7d91ab5a38cf213c7"
     },
     {
+        "_id": "67f628f5e568363d6860e985",
         "name": "Brödform Non-stick",
         "price": 59,
         "image": "https://productimages.motatos.com/MS247616/ms247616_1-d037fc52-0db1-4191-a572-48b35cc06de5.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -177,9 +192,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "hushåll"
+        "category": "67f636f7d91ab5a38cf213c7"
     },
     {
+        "_id": "67f628f5e568363d6860e988",
         "name": "Snabbnudlar Ramen Miso 4-pack",
         "price": 45,
         "image": "https://productimages.motatos.com/MS231547/ms231547_1-4549274b-0e22-4040-a833-74ed237571c1.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -189,9 +205,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "ätbart"
+        "category": "67f636f7d91ab5a38cf213c3"
     },
     {
+        "_id": "67f628f6e568363d6860e98b",
         "name": "Läsk Ramune Melon 200ml",
         "price": 17,
         "image": "https://productimages.motatos.com/MS250044/ms250044_1-a6f20aac-5afe-4d6e-bfad-901f1b6b6545.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -199,11 +216,12 @@
         "amount": 200,
         "brand": "Hata",
         "discount": 1,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 2,
-        "category": "drickbart"
+        "category": "67f636f7d91ab5a38cf213bb"
     },
     {
+        "_id": "67f628f6e568363d6860e98e",
         "name": "Fanta Strawberry Kiwi",
         "price": 11,
         "image": "https://productimages.motatos.com/MS221224/ms221224_1-02ef592d-80b9-4e2b-82b6-071ab5045318.png?tr=w-2034,h-2034,c-at_max,bg-ffffff",
@@ -213,9 +231,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 2,
-        "category": "drickbart"
+        "category": "67f636f7d91ab5a38cf213bb"
     },
     {
+        "_id": "67f628f6e568363d6860e991",
         "name": "Hundmat deluxe",
         "price": 129,
         "image": "https://res.cloudinary.com/coopsverige/images/e_sharpen,f_auto,fl_clip,fl_progressive,q_90,c_lpad,g_center,h_660,w_660/v1614836411/423730/Hundmat%20Classic%20terrine%208-pack.jpg",
@@ -225,9 +244,10 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 6,
-        "category": "husdjur"
+        "category": "67f636f7d91ab5a38cf213c9"
     },
     {
+        "_id": "67f628f6e568363d6860e994",
         "name": "Kattmat",
         "price": 89,
         "image": "https://res.cloudinary.com/coopsverige/images/e_sharpen,f_auto,fl_clip,fl_progressive,q_90,c_lpad,g_center,h_660,w_660/v1676872929/cloud/274406/Kattmat%20Klassiska%20m%C3%A5ltider%2012-pack.jpg",
@@ -237,6 +257,19 @@
         "discount": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "stock": 5,
-        "category": "husdjur"
+        "category": "67f636f7d91ab5a38cf213c9"
+    },
+    {
+        "_id": "67f628f7e568363d6860e997",
+        "name": "EKO ägg M/L",
+        "price": 35.90,
+        "image": "https://assets.axfood.se/image/upload/f_auto,t_500/07316840806072_C1L1_s08",
+        "unit": "st",
+        "amount": 6,
+        "brand": "Dava",
+        "discount": 1,
+        "description": "ekologiska ägg från svenska gårdar.",
+        "stock": 20,
+        "category": "67f636f6d91ab5a38cf213b9"
     }
 ]

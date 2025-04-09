@@ -1,14 +1,50 @@
 [
-    {"name": "bröd"},
-    {"name": "mejeri"},
-    {"name": "dryck"},
-    {"name": "frukt och grönt"},
-    {"name": "kött och fisk"},
-    {"name": "konserver"},
-    {"name": "skafferi"},
-    {"name": "godis och snacks"},
-    {"name": "hushåll"},
-    {"name": "husdjur"},
-    {"name": "veganskt"},
-    {"name": "tom kategori"}
+    {
+      "_id": "67f636f6d91ab5a38cf213b7",
+      "name": "bröd"
+    },
+    {
+      "_id": "67f636f6d91ab5a38cf213b9",
+      "name": "mejeri"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213bb",
+      "name": "dryck"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213bd",
+      "name": "frukt och grönt"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213bf",
+      "name": "kött och fisk"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213c1",
+      "name": "konserver"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213c3",
+      "name": "skafferi"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213c5",
+      "name": "godis och snacks"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213c7",
+      "name": "hushåll"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213c9",
+      "name": "husdjur"
+    },
+    {
+      "_id": "67f636f7d91ab5a38cf213cb",
+      "name": "veganskt"
+    },
+    {
+      "_id": "67f636f8d91ab5a38cf213cd",
+      "name": "tom kategori"
+    }
 ]
