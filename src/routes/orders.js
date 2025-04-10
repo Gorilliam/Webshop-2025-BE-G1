@@ -47,6 +47,7 @@ orderRoutes.post("/", async (req, res) => {
       res.json({ error: "The order must contain at least one product." });
       return;
     }
+    
 
     if (req.body.user || req.user) {
       const id = req.body?.user || req.user?._id;

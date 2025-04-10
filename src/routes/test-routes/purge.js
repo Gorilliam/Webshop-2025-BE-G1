@@ -60,7 +60,7 @@ purgeRouter.delete('/purgeAll', async (req, res) => {
         await Product.deleteMany({})
         await Category.deleteMany({})
         await User.deleteMany({})
-        await Order.delteMany({})
+        await Order.deleteMany({})
         res.json({ message: `All products, categories, users, and orders deleted.` })
     } catch (error) {
         res.status(500)
