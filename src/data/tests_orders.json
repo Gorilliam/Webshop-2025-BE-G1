@@ -5,6 +5,7 @@
       "address": "Kodgatan 13",
       "email": "addedtomain@already.com",
       "phoneNumber": "0101010101",
+      "user": "67f7bda8b575b3432b5abe45",
       "products": [
         {
           "productId": "67f628f5e568363d6860e982",
@@ -35,6 +36,7 @@
         "address": "Ensamhetsgatan 77",
         "email": "foreveralone@placeholder@gmail.com",
         "phoneNumber": "0795457651",
+        "user": "67f7bda8b575b3432b5abe45",
         "products": [
           {
             "productId": "67f628f5e568363d6860e97f",

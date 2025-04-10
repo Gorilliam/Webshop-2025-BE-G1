@@ -1,5 +1,13 @@
 [
     {
+        "email": "Hakim@livs.se",
+        "firstName": "Hakim",
+        "lastName": "Admin",
+        "password": "jagäradmin",
+        "isAdmin": true
+    },
+    {   
+        "_id": "67f7bda8b575b3432b5abe45",
         "firstName": "Sara",
         "lastName": "Serasol",
         "password": "Fikapafredag123!",
@@ -96,12 +104,5 @@
         "password": "EllaStrong555!",
         "email": "ella.pettersson@example.com",
         "isAdmin": false
-    },
-    {
-        "email": "Hakim@livs.se",
-        "firstName": "Hakim",
-        "lastName": "Admin",
-        "password": "jagäradmin",
-        "isAdmin": true
     }
 ]
