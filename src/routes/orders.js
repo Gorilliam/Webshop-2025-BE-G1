@@ -13,6 +13,24 @@ orderRoutes.get("/", async (req, res) => {
   }
 });
 
+orderRoutes.get("/:orderID", async (req, res) => {
+    const { orderID } = req.params
+    
+    try {
+        const order = await Order.findOne({orderID}).populate("products.productId")
+
+      if (!order) {
+        console.log(order)
+        return res.status(404).json({ error: "Order not found" });
+      }
+      res.json(order)
+
+    } catch (error) {
+        console.error("Error fetching order:", error);
+        res.status(500).json({ error: error?.message })
+    }
+})
+
 orderRoutes.post("/", async (req, res) => {
   try {
     if (!req.body?.products) {
