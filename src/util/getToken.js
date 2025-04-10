@@ -42,7 +42,10 @@ export async function getUserDataFromToken(req) {
     }
 
     // get previously used addresses and phone numbers
-    const orders = await Order.find({ email: foundUser.email })
+    const orders = [
+        ...(await Order.find({ email: foundUser.email })),
+        ...(await Order.find({ user: foundUser._id }))
+    ]
     const previouslyUsed = {
         addresses: [...new Set(orders.map(o => o.address))],
         phoneNumbers: [...new Set(orders.map(o => o.phoneNumber))]
