@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import Product from "./Product.js";
+import { Schema } from "mongoose";
 
 // Order schema
 const orderSchema = new mongoose.Schema(
@@ -9,6 +10,10 @@ const orderSchema = new mongoose.Schema(
       //It's required as String, let me know if I'm wrong with that type
       type: String,
       unique: true,
+    },
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: "user",
     },
     firstName: {
       type: String,

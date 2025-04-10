@@ -10,6 +10,8 @@ import purgeRouter from "./test-routes/purge.js";
 import testUsersRouter from "./test-routes/test-users.js";
 import testOrdersRouter from "./test-routes/test-orders.js";
 
+import fs from 'fs'
+
 const testRouter = Router()
 
 testRouter.use(testProductsRouter)
@@ -77,6 +79,34 @@ testRouter.post('/insertDocs', async (req, res) => {
     }
 })
 
+function tryReadingData(name) {
+    const paths = [
+        `./src/data/${name}.json`,
+        `./data/${name}.json`,
+        `./dist/data/${name}.json`,
+    ]
+
+    for (const path of paths) {
+        try {
+            const data = JSON.parse(fs.readFileSync(path), null, 2)
+            return data
+        } catch (_) {}
+    }
+
+    return []
+}
+
+const testData = {
+    purgeAllFirst: true,
+    categories: tryReadingData('categories'),
+    products: tryReadingData('products'),
+    users: tryReadingData('users'),
+    orders: tryReadingData('orders')
+}
+
+testRouter.get('/testData', (req, res) => {
+    res.json(testData)
+})
 
 
 export default testRouter

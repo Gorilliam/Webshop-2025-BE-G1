@@ -1,135 +1,3 @@
-<<<<<<< HEAD
-# Hakim Livs API
-
-## Endpoints
-
-### User endpoints
-
-| Method | URL | JSON | Cookie req. | Sets cookie | Admin | Dev |
-|---|---|---|---|---|---|---|
-|POST|/api/users/signup|X||X||
-|POST|/api/users/login|X||X||
-|GET|/api/users/me/||X|||
-
-#### User test endpoints
-
-| Method | URL | JSON | Cookie req. | Sets cookie | Admin | Dev |
-|---|---|---|---|---|---|---|
-|POST|/api/test/users|X||X||X|
-|POST|/api/test/users/login|X||X||X|
-|GET|/api/test/users/me/||X|||X|
-
-### Category endpoints
-
-### Product endpoints
-
-## Models
-
-### User
-
-- Model name: user
-- Collection name: users
-```js
-{
-    firstName: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    lastName: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    password: {
-      type: String,
-      required: true,
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    isAdmin: {
-      type: Boolean,
-      default: false,
-    },
-}
-```
-
-### Category
-
-- Model name: category
-- Collection name: categories
-
-```js
-{
-    name: {
-        type: String,
-        required: true,
-        unique: true,
-        minLength: 3,
-        maxLength: 100
-    }
-}
-```
-
-### Product
-
-- Model name: Product
-- Collection name: Products
-```js
-{
-  name: {
-    type: String,
-    required: true,
-    trim: true
-  },
-  price: {
-    type: Number,
-    required: true,
-    min: 0
-  },
-  image: {
-    type: String,
-    default: ""  //Add a picture URL to something that will become a placeholder
-  },
-  unit: {  //Kilos, litres etc...
-    type: String,
-    enum: ['mg', 'g', 'kg', 'ml', 'cl', 'dl', 'l', 'pcs', 'st', 'oz', 'lb'],  // st= styck, pcs = pieces countable items, oz = ounce, lb = pound
-    required: true
-  },
-  amount: {   //The number shown before unit type for a product
-    type: Number,
-    required: true,
-    min: 0
-  },
-  brand:  {
-    type: String,
-    required: true
-  },
-  discount: {
-    type: Number,
-    default: 1,
-    min: 0,
-    max: 1
-  },
-  description: {
-    type: String,
-    default: ''
-  },
-  stock: {
-    type: Number,
-    default: 0,
-    min: 0
-  },
-  category: {
-    type: Schema.Types.ObjectId,
-    ref: 'category',
-    required: true
-
-  }
-=======
 # Hakim Livs Backend
 
 ## Requirements
@@ -210,6 +78,19 @@ The app is powered by mongoose and uses the following schemas:
 | email | string | required, unique
 | isAdmin | boolean | defaults to false
 
+### Order
+
+| FIELD | TYPE | INFO |
+|-|-|-|
+| firstName | string | required
+| lastName | string | required
+| email | string | required
+| phoneNumber | string | required
+| address | string | required
+| prodcuts | array of objects which have the properties "productId" (ObjectId) and "quantity" (number) | required
+| user | ObjectId (user) | ___optional!___ you don't have to be logged in to place an order
+
+
 ## Endpoints
 
 A colon (:) before a word means it is a URL parameter. You are meant to replace it with something, without the colon.
@@ -245,7 +126,7 @@ For information on authentication, see the authentication section.
 ### Order endpoints
 | METHOD | URL | WHAT IT'S FOR | INFO |
 |--------|-----|---------------|------|
-| Get | /api/orders | Get all orders | |
+| GET | /api/orders | Get all orders | |
 | POST | /api/orders | Create an order | Required JSON object. See /api/ for more details.
 
 ### Test endpoints
@@ -284,20 +165,15 @@ Simply make a `POST` request to `/api/test/insertDocs` with a JSON body that loo
 
 ## Authentication
 
-In order to make successful requests to certain endpoints, you must have a token-cookie attached to the client. This will be set on the client automatically on successful signup & login requests, regardless of whether they're made in the browser, or with another HTTP client such as Postman. 
-
-When it comes to sending the token-cookie back to the server, Postman will automaticlly attach the token-cookie, but fetch and axios will not. In order to ensure that this cookie is automatically passed back to the server during requests in the browser, an extra step must be taken so that the request is configured correctly. Below are examples with both the fetch API and axios.
+The token must be sent to the backend in order to authenticate the logged-in user. This will happen automatically in postman via cookie, but for browsers, a header must be included. See below.
 
 ```js
 async function fetchExample() {
     const res = await fetch("URL GOES HERE", {
         headers: {
-            "Content-Type": "application/json" 
-            // ⬆ Required when sending json to the server ⬆
-        },
-        body: JSON.stringify(yourDataHere),
-        credentials: "include"
-        // ⬆ This is what attaches the cookie to the request ⬆
+            "Content-Type": "application/json",
+            "hakim-livs-token": "TOKEN GOES HERE"
+        }
     })
 }
 
@@ -305,9 +181,9 @@ async function axiosExample() {
     const res = await axios.post("URL GOES HERE", {
         // Your data here
     }, {
-        withCredentials: true
-        // ⬆ equivalent of credentials: "include" in fetch ⬆
+        headers: {
+            'hakim-livs-token': "TOKEN GOES HERE"
+        }
     })
->>>>>>> 839d22e5dfe72b82b7a9cd75d38b47ee67167717
 }
 ```

@@ -32,15 +32,15 @@ async function seed() {
     await Category.deleteMany({})
     await User.deleteMany({})
     await Order.deleteMany({})
-    await seedOneModel("category", Category, categories)
-    await seedOneModel("product", Product, products)
-    await seedOneModel("user", User, users)
-    await seedOneModel("order", Order, orders)
+    await seedOneModel("category", Category, categories, 'name')
+    await seedOneModel("product", Product, products, 'name')
+    await seedOneModel("user", User, users, 'firstName')
+    await seedOneModel("order", Order, orders, 'firstName')
     console.log("DONE")
     process.exit()
 }
 
-async function seedOneModel(modelName, model, array) {
+async function seedOneModel(modelName, model, array, identifierKey) {
     console.log(`Starting to seed "${modelName}".`)
     const amt = array.length;
     for (let i = 0; i < amt; i++) {
@@ -51,10 +51,10 @@ async function seedOneModel(modelName, model, array) {
                 item.unit = item.unit.toLowerCase()
             }
             await model.create(item)
-            console.log(`Succeeded seeding ${modelName} "${item.name || item.username}".`)
+            console.log(`Succeeded seeding ${modelName} "${item[identifierKey]}".`)
         } catch (error) {
             console.log(error)
-            console.log(`Failed seeding ${modelName} "${item.name || item.username}". ${error?.message}.`)
+            console.log(`Failed seeding ${modelName} "${item[identifierKey]}". ${error?.message}.`)
         }
     }
 }

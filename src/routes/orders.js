@@ -1,5 +1,6 @@
 import { Router } from "express";
 import Order from "../models/Order.js";
+import User from "../models/User.js";
 
 const orderRoutes = Router();
 
@@ -32,6 +33,26 @@ orderRoutes.get("/:orderID", async (req, res) => {
 
 orderRoutes.post("/", async (req, res) => {
   try {
+    if (!req.body?.products) {
+      res.status(400);
+      res.json({
+        error:
+          "Request body must be an object with the order data and a property called 'products'. See /api/ for more details.",
+      });
+      return;
+    }
+
+    if (req.body.products.length < 1) {
+      res.status(400);
+      res.json({ error: "The order must contain at least one product." });
+      return;
+    }
+
+    if (req.body.user) {
+      const foundUser = await User.findById(req.body.user)
+      if (!foundUser) return res.status(404).json({ error: `Object id did not match any users in the database: "${req.body.user}"`});
+    }
+
     const newOrder = await Order.create(req.body);
     res.json(newOrder);
   } catch (error) {
@@ -47,13 +68,7 @@ orderRoutes.put("/:orderID/:status", async (req, res) => {
     const { orderID, status } = req.params;
 
     // Validate the status
-    const allowedStatuses = [
-      "pending",
-      "sent",
-      "delivered",
-      "completed",
-      "cancelled",
-    ];
+    const allowedStatuses = ["pending", "shipped", "delivered", "cancelled"];
     if (!allowedStatuses.includes(status)) {
       return res.status(400).json({ error: "Invalid status" });
     }
