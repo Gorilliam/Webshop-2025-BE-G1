@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
+    "william": "nodemon src/index.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "seed": "node src/scripts/seed.js"
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.26.0",
     "babel-jest": "^29.7.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9"
   }
 }
