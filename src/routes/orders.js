@@ -48,9 +48,10 @@ orderRoutes.post("/", async (req, res) => {
       return;
     }
 
-    if (req.body.user) {
-      const foundUser = await User.findById(req.body.user)
-      if (!foundUser) return res.status(404).json({ error: `Object id did not match any users in the database: "${req.body.user}"`});
+    if (req.body.user || req.user) {
+      const id = req.body?.user || req.user?._id;
+      const foundUser = await User.findById(id)
+      if (!foundUser) return res.status(404).json({ error: `Object id did not match any users in the database: "${id}"`});
     }
 
     const newOrder = await Order.create(req.body);
