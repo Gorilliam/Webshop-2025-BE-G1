@@ -11,7 +11,6 @@ import categoryRoutes from "./routes/categories.js";
 import orderRoutes from "./routes/orders.js";
 import { mustBeDeveloper } from "./middleware/test.js";
 import { userContextMiddleware } from "./middleware/user.js";
-import { adminAuth } from "./middleware/auth.js";
 
 dotenv.config();
 
