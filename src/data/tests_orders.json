@@ -1,0 +1,151 @@
+[
+    {
+      "firstName": "Doug",
+      "lastName": "Quick",
+      "address": "Kodgatan 13",
+      "email": "addedtomain@already.com",
+      "phoneNumber": "0101010101",
+      "user": "67f7bda8b575b3432b5abe45",
+      "products": [
+        {
+          "productId": "67f628f5e568363d6860e982",
+          "quantity": 1
+        },
+        {
+          "productId": "67f628f6e568363d6860e98b",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+        "firstName": "Johan",
+        "lastName": "Hind",
+        "address": "Placeholdervägen 44A",
+        "email": "john.doe@placeholder.com",
+        "phoneNumber": "0737955164",
+        "products": [
+          {
+            "productId": "67efa09d2fb3b7701d73b8ec",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "firstName": "Inga",
+        "lastName": "Venner",
+        "address": "Ensamhetsgatan 77",
+        "email": "foreveralone@placeholder@gmail.com",
+        "phoneNumber": "0795457651",
+        "user": "67f7bda8b575b3432b5abe45",
+        "products": [
+          {
+            "productId": "67f628f5e568363d6860e97f",
+            "quantity": 3
+          },
+          {
+            "productId": "67f628f6e568363d6860e994",
+            "quantity": 8
+          },
+          {
+            "productId": "67f628f6e568363d6860e98e",
+            "quantity": 2
+          },
+          {
+            "productId": "67f628f5e568363d6860e988",
+            "quantity": 7
+          }
+        ]
+      },
+      {
+        "firstName": "Jesper",
+        "lastName": "Budguru",
+        "address": "Murgatan 66",
+        "email": "wolfofwallstreet@example.com",
+        "phoneNumber": "0737955164",
+        "products": [
+          {
+            "productId": "67efa09c2fb3b7701d73b8da",
+            "quantity": 4
+          },
+          {
+            "productId": "67f628f2e568363d6860e95b",
+            "quantity": 12
+          },
+          {
+            "productId": "67efa09c2fb3b7701d73b8dd",
+            "quantity": 14
+          }
+        ]
+      },
+      {
+        "firstName": "Eskil",
+        "lastName": "Testén",
+        "address": "Provgatan 6",
+        "email": "test@gmail.se",
+        "phoneNumber": "0754994545",
+        "products": [
+          {
+            "productId": "67efa09d2fb3b7701d73b8e9",
+            "quantity": 5
+          },
+          {
+            "productId": "67efa09c2fb3b7701d73b8e0",
+            "quantity": 7
+          }
+        ]
+      },
+      {
+        "firstName": "Vera",
+        "lastName": "Velig",
+        "address": "Returgatan 77",
+        "email": "avbestallarn@outlook.se",
+        "phoneNumber": "0753532456",
+        "status": "cancelled",
+        "products": [
+          {
+            "productId": "67f628f4e568363d6860e97c",
+            "quantity": 5
+          },
+          {
+            "productId": "67f628f4e568363d6860e976",
+            "quantity": 7
+          }
+        ]
+      },
+      {
+        "firstName": "Mats",
+        "lastName": "Leverén",
+        "address": "Mottagargatan 54",
+        "email": "bestallarn@outlook.se",
+        "phoneNumber": "0762124567",
+        "status": "delivered",
+        "products": [
+          {
+            "productId": "67f628f6e568363d6860e991",
+            "quantity": 9
+          }
+        ]
+      },
+      {
+        "firstName": "Verner",
+        "lastName": "Weit",
+        "address": "Utskickarstigen 96",
+        "email": "vantarn@example.com",
+        "phoneNumber": "0786467897",
+        "status": "shipped",
+        "products": [
+          {
+            "productId": "67f628f2e568363d6860e95b",
+            "quantity": 6
+          },
+          {
+            "productId": "67efa09d2fb3b7701d73b8e9",
+            "quantity": 2
+          },
+          {
+            "productId": "67f628f5e568363d6860e985",
+            "quantity": 4
+          }
+        ]
+      }
+]
