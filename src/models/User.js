@@ -44,13 +44,13 @@ userSchema.pre("save", async function (next) {
   next();
 });
 
-// Convert email toLowerCase
-userSchema.pre("save", function (next) {
-  if (this.email) {
-    this.email = this.email.trim().toLowerCase();
-  }
-  next();
-});
+// // Convert email toLowerCase
+// userSchema.pre("save", function (next) {
+//   if (this.email) {
+//     this.email = this.email.trim().toLowerCase();
+//   }
+//   next();
+// });
 
 
 // Method to compare passwords

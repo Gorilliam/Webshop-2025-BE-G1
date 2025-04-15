@@ -12,10 +12,10 @@ const router = express.Router();
 // Register   POST /api/auth/register
 router.post("/signup", async (req, res) => {
   try {
-    if (req.body.email) {
-      req.body.email = req.body.email.trim().toLowerCase();
-      console.log(req.body.email)
-    }
+    // if (req.body.email) {
+    //   req.body.email = req.body.email.trim().toLowerCase();
+    //   console.log(req.body.email)
+    // }
     const user = new User(req.body);
     await user.save();
 
