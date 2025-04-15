@@ -18,23 +18,28 @@ const orderSchema = new mongoose.Schema(
     firstName: {
       type: String,
       required: true,
+      maxlength: 100,
     },
     lastName: {
       type: String,
       required: true,
+      maxlength: 100,
     },
     address: {
       type: String,
       required: true,
+      maxlength: 100,
     },
     email: {
       type: String,
       required: true,
+      maxlength: 100,
     },
     // In case if user writes different kinds of format like +46... spaces, parentheses etc.
     phoneNumber: {
       type: String,
       required: true,
+      maxlength: 100,
     },
     totalPrice: {
       type: Number,
