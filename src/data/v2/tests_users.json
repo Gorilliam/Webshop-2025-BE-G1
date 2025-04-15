@@ -1,0 +1,108 @@
+[
+    {
+        "email": "hakim@livs.se",
+        "firstName": "Hakim",
+        "lastName": "Admin",
+        "password": "jagäradmin",
+        "isAdmin": true
+    },
+    {   
+        "_id": "67f7bda8b575b3432b5abe45",
+        "firstName": "Sara",
+        "lastName": "Serasol",
+        "password": "Fikapafredag123!",
+        "email": "serasolsara@fika.nu",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Jesper",
+        "lastName": "Budguru",
+        "password": "Budgud123!",
+        "email": "wolfofwallstreet@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Jacob",
+        "lastName": "Deeppocket",
+        "password": "Verydeep123!",
+        "email": "jacobdeeppocket@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Mark",
+        "lastName": "Thumbsup",
+        "password": "Ithumbup123!",
+        "email": "notthumbingdown@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Mansi",
+        "lastName": "Nightowl",
+        "password": "Iwork247!",
+        "email": "neverstopwork@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Doug",
+        "lastName": "Quick",
+        "password": "123Works!",
+        "email": "addedtomain@already.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Fenris",
+        "lastName": "Moonhowler",
+        "password": "Awooooo123!",
+        "email": "itransform@night.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "William",
+        "lastName": "Longwaytogo",
+        "password": "Sunside123!",
+        "email": "sunnyside@up.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Tony",
+        "lastName": "Skillsson",
+        "password": "Pass123!",
+        "email": "tony.skillsson@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Roy",
+        "lastName": "Goalsson",
+        "password": "Secure456!",
+        "email": "roy.goalsson@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Fia",
+        "lastName": "Lelsson",
+        "password": "Test789!",
+        "email": "fia.lelsson@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Mia",
+        "lastName": "Karlsson",
+        "password": "MiaPass321!",
+        "email": "mia.karlsson@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Jon",
+        "lastName": "Andersson",
+        "password": "JonSecure098!",
+        "email": "jon.andersson@example.com",
+        "isAdmin": false
+    },
+    {
+        "firstName": "Ella",
+        "lastName": "Pettersson",
+        "password": "EllaStrong555!",
+        "email": "ella.pettersson@example.com",
+        "isAdmin": false
+    }
+]
