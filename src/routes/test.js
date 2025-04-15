@@ -20,7 +20,7 @@ testRouter.use(purgeRouter)
 testRouter.use(testUsersRouter)
 testRouter.use(testOrdersRouter)
 
-
+import { putBackTony } from "./test-routes/purge.js";
 testRouter.post('/insertDocs', async (req, res) => {
 
     let createdCount = 0
@@ -34,6 +34,7 @@ testRouter.post('/insertDocs', async (req, res) => {
             await Product.deleteMany({})
             await Category.deleteMany({})
             await Order.deleteMany({})
+            await putBackTony()
         }
 
         const insertDocs = async (key) => {
