@@ -12,6 +12,11 @@ const router = express.Router();
 // Register   POST /api/auth/register
 router.post("/signup", async (req, res) => {
   try {
+    const userWithSameEmail = await User.findOne({ email: req.body.email });
+
+    if (userWithSameEmail) {
+      return res.status(409).json({ message: "E-postadressen är redan registrerad." });
+}
 
     const user = new User(req.body);
     await user.save();
