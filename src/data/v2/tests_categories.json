@@ -1,50 +1,50 @@
 [
     {
       "_id": "67f636f6d91ab5a38cf213b7",
-      "name": "bröd"
+      "name": "Bröd"
     },
     {
       "_id": "67f636f6d91ab5a38cf213b9",
-      "name": "mejeri"
+      "name": "Mejeri"
     },
     {
       "_id": "67f636f7d91ab5a38cf213bb",
-      "name": "dryck"
+      "name": "Dryck"
     },
     {
       "_id": "67f636f7d91ab5a38cf213bd",
-      "name": "frukt och grönt"
+      "name": "Frukt & grönt"
     },
     {
       "_id": "67f636f7d91ab5a38cf213bf",
-      "name": "kött och fisk"
+      "name": "Kött & fisk"
     },
     {
       "_id": "67f636f7d91ab5a38cf213c1",
-      "name": "konserver"
+      "name": "Konserver"
     },
     {
       "_id": "67f636f7d91ab5a38cf213c3",
-      "name": "skafferi"
+      "name": "Skafferi"
     },
     {
       "_id": "67f636f7d91ab5a38cf213c5",
-      "name": "godis och snacks"
+      "name": "Godis & snacks"
     },
     {
       "_id": "67f636f7d91ab5a38cf213c7",
-      "name": "hushåll"
+      "name": "Hushåll"
     },
     {
       "_id": "67f636f7d91ab5a38cf213c9",
-      "name": "husdjur"
+      "name": "Husdjur"
     },
     {
       "_id": "67f636f7d91ab5a38cf213cb",
-      "name": "veganskt"
+      "name": "Veganskt"
     },
     {
       "_id": "67f636f8d91ab5a38cf213cd",
-      "name": "tom kategori"
+      "name": "Tom kategori"
     }
 ]
