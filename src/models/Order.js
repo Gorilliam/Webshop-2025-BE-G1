@@ -67,7 +67,7 @@ const orderSchema = new mongoose.Schema(
     products: [
       {
         productId: { type: mongoose.Schema.Types.ObjectId, ref: "Product" },
-        quantity: { type: Number, required: true },
+        quantity: { type: Number, required: true, min: 1 },
       },
     ],
   },
@@ -98,6 +98,37 @@ orderSchema.pre("save", async function (next) {
   this.VAT = this.totalPrice * 0.12; // Example for 12% VAT
   next();
 });
+
+// Pre hook for validating product quantities
+orderSchema.pre("save", async function(next) {
+    for (const product of this.products) {
+      const foundProduct = await Product.findById(product.productId);
+      console.log(product, foundProduct)
+      if (product.quantity > foundProduct.stock) {
+        let ending;
+        if (foundProduct.stock > 1) {
+          ending = `there are only ${foundProduct.stock} left.`
+        } else if (foundProduct.stock === 1) {
+          ending = `there is only ${foundProduct.stock} left.`
+        } else {
+          ending = `there are none left.`
+        }
+        throw new Error(`You cannot place this order because you are trying to order ${product.quantity} of "${foundProduct.name}" when ${ending}`)
+      }
+    }
+
+    next()
+})
+
+// Post hook for adjusting the stock of the item
+orderSchema.post("save", async function(doc) {
+  for (const product of doc.products) {
+    const foundProduct = await Product.findById(product.productId);
+    foundProduct.stock -= product.quantity
+    if (foundProduct.stock < 0) foundProduct.stock = 0
+    await foundProduct.save()
+  }
+})
 
 const Order = mongoose.model("Order", orderSchema);
 
