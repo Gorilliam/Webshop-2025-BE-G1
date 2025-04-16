@@ -9,6 +9,7 @@ import testRouter from "./routes/test.js";
 import apiDocumentation from "./routes/documentation.js";
 import categoryRoutes from "./routes/categories.js";
 import orderRoutes from "./routes/orders.js";
+import fun from "./routes/forFun.js";
 import { mustBeDeveloper } from "./middleware/test.js";
 import { userContextMiddleware } from "./middleware/user.js";
 
@@ -50,6 +51,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/test", mustBeDeveloper, testRouter);
 app.use("/api/orders", orderRoutes )
+app.use("/api/other", fun)
 
 
 mongoose.connect(MONGODB_URI)

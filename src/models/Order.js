@@ -121,13 +121,14 @@ orderSchema.pre("save", async function(next) {
 })
 
 // Post hook for adjusting the stock of the item
-orderSchema.post("save", async function(doc) {
+orderSchema.post("save", async function(doc, next) {
   for (const product of doc.products) {
     const foundProduct = await Product.findById(product.productId);
     foundProduct.stock -= product.quantity
     if (foundProduct.stock < 0) foundProduct.stock = 0
     await foundProduct.save()
   }
+  next()
 })
 
 const Order = mongoose.model("Order", orderSchema);
