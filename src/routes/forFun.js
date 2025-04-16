@@ -179,6 +179,8 @@ export async function addVeganProducts() {
     const failedProducts = []
     for (const product of veganProducts) {
         try {
+            const existingProduct = await Product.findOne({ name: product.name })
+            if (existingProduct) continue;
             const newProduct = await Product.create({...product, category: veganCategory._id})
             addedProducts.push(newProduct)
         } catch (error) {
