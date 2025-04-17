@@ -34,6 +34,7 @@ const orderSchema = new mongoose.Schema(
       type: String,
       required: true,
       maxlength: 100,
+      lowercase: true
     },
     // In case if user writes different kinds of format like +46... spaces, parentheses etc.
     phoneNumber: {
