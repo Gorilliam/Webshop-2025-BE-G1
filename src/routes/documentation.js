@@ -240,7 +240,7 @@ documentRoute({
         {
             firstName: "first name",
             lastName: "last name",
-            address: "address",
+            address: "Gatunummer 73 Postort postnummer",
             email: "email",
             phoneNumber: "phone number",
             user: "OPTIONAL objectId of the user",
@@ -258,7 +258,7 @@ documentRoute({
         {
             firstName: "first name",
             lastName: "last name",
-            address: "address",
+            address: "Gatunummer 73 Postort postnummer",
             email: "email",
             phoneNumber: "phone number",
             user: "OPTIONAL objectId of the user",
