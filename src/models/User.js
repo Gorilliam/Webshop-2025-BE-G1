@@ -1,5 +1,10 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
+import {
+  emailRegex,
+  nameRegex,
+} from "../util/regexValidation.js";
+
 
 const userSchema = new mongoose.Schema(
   {
@@ -8,24 +13,28 @@ const userSchema = new mongoose.Schema(
       required: true,
       maxlength: 100,
       trim: true,
+      match: [nameRegex, "Förnamn får bara innehålla bokstäver och bindestreck"]
     },
     lastName: {
       type: String,
       required: true,
       maxlength: 100,
       trim: true,
+      match: [nameRegex, "Efternamn får bara innehålla bokstäver och bindestreck"]
     },
     password: {
       type: String,
       required: true,
       maxlength: 100,
+      minlength: 8
     },
     email: {
       type: String,
       required: true,
       maxlength: 100,
       unique: true,
-      lowercase: true
+      lowercase: true,
+      match: [emailRegex, "Ogiltig e-postadress"]
     },
     isAdmin: {
       type: Boolean,
