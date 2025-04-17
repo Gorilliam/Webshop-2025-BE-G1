@@ -1,7 +1,8 @@
 export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export const nameRegex = /^[a-zA-ZåäöÅÄÖ\-]+$/;
-export const fullAddressRegex = /^[A-Za-zÅÄÖåäö\s\-]+(\s[A-Za-zÅÄÖåäö\s]+)\s\d{5}$/;;
+export const fullAddressRegex = /^[A-Za-zÅÄÖåäö0-9\s\-]+ \d+\s[A-Za-zÅÄÖåäö\s]+ \d{5}$/
 export const phoneRegex = /^\+?\d+$/;
+
 
 
 /* 
