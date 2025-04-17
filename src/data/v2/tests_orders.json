@@ -2,7 +2,7 @@
     {
       "firstName": "Doug",
       "lastName": "Quick",
-      "address": "Kodgatan 13",
+      "address": "Kodgatan 13 Falun 79131",
       "email": "addedtomain@already.com",
       "phoneNumber": "0101010101",
       "user": "67f7bda8b575b3432b5abe45",
@@ -20,7 +20,7 @@
     {
         "firstName": "Johan",
         "lastName": "Hind",
-        "address": "Placeholdervägen 44A",
+        "address": "Placeholdervägen 44 Grönköping 45433",
         "email": "john.doe@placeholder.com",
         "phoneNumber": "0737955164",
         "products": [
@@ -33,8 +33,8 @@
       {
         "firstName": "Inga",
         "lastName": "Venner",
-        "address": "Ensamhetsgatan 77",
-        "email": "foreveralone@placeholder@gmail.com",
+        "address": "Ensamhetsgatan 77 Enslinge 43212",
+        "email": "foreveralone@gmail.com",
         "phoneNumber": "0795457651",
         "user": "67f7bda8b575b3432b5abe45",
         "products": [
@@ -59,7 +59,7 @@
       {
         "firstName": "Jesper",
         "lastName": "Budguru",
-        "address": "Murgatan 66",
+        "address": "Murgatan 66 Teglinge 25475",
         "email": "wolfofwallstreet@example.com",
         "phoneNumber": "0737955164",
         "products": [
@@ -79,8 +79,8 @@
       },
       {
         "firstName": "Eskil",
-        "lastName": "Testén",
-        "address": "Provgatan 6",
+        "lastName": "Testen",
+        "address": "Provgatan 6 Egilstuna 12545",
         "email": "test@gmail.se",
         "phoneNumber": "0754994545",
         "products": [
@@ -97,7 +97,7 @@
       {
         "firstName": "Vera",
         "lastName": "Velig",
-        "address": "Returgatan 77",
+        "address": "Returgatan 77 Storuman 92454",
         "email": "avbestallarn@outlook.se",
         "phoneNumber": "0753532456",
         "status": "cancelled",
@@ -114,8 +114,8 @@
       },
       {
         "firstName": "Mats",
-        "lastName": "Leverén",
-        "address": "Mottagargatan 54",
+        "lastName": "Leveren",
+        "address": "Mottagargatan 54 Örnskökdsvik 12542",
         "email": "bestallarn@outlook.se",
         "phoneNumber": "0762124567",
         "status": "delivered",
@@ -129,7 +129,7 @@
       {
         "firstName": "Verner",
         "lastName": "Weit",
-        "address": "Utskickarstigen 96",
+        "address": "Utskickarstigen 96 Funäsdalen 45321",
         "email": "vantarn@example.com",
         "phoneNumber": "0786467897",
         "status": "shipped",
