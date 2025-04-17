@@ -1,6 +1,6 @@
 export const emailRegex =  /^[a-zA-ZåäöÅÄÖéÉøØüÜçÇñÑ0-9._'-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 export const nameRegex = /^[a-zA-ZåäöÅÄÖéÉøØüÜçÇñÑ\-']+$/;
-export const fullAddressRegex = /^[A-Za-zÅÄÖåäö0-9\s\-]+ \d+[A-Za-z]?\s[A-Za-zÅÄÖåäö\s]+ \d{5}$/
+export const fullAddressRegex = /^[A-Za-zÅÄÖåäöéÉ0-9\s\-]+ \d+[A-Za-z]?\s[A-Za-zÅÄÖåäöéÉ\s]+ \d{5}$/
 export const phoneRegex = /^\+?\d+$/;
 
 
@@ -20,7 +20,7 @@ export const phoneRegex = /^\+?\d+$/;
 *** name ***
 [a-zA-ZåäöÅÄÖ\-] means any character beteen lowercase a-z and uppercase A-Z
  + swedish letters + éÉøØüÜçÇñÑ\-'.
- 
+
 
 *** full address ***
   Matches addresses in the format:
