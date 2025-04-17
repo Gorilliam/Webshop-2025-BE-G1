@@ -1,5 +1,5 @@
 export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-export const nameRegex = /^[a-zA-ZåäöÅÄÖ\-]+$/;
+export const nameRegex = /^[a-zA-ZåäöÅÄÖéÉøØüÜçÇñÑ\-']+$/;
 export const fullAddressRegex = /^[A-Za-zÅÄÖåäö0-9\s\-]+ \d+[A-Za-z]?\s[A-Za-zÅÄÖåäö\s]+ \d{5}$/
 export const phoneRegex = /^\+?\d+$/;
 
@@ -13,7 +13,7 @@ Expected structure: Any@thing.com  (Something before @, after it, a dot and some
 
 *** name ***
 [a-zA-ZåäöÅÄÖ\-] means any character beteen lowercase a-z and uppercase A-Z
- + swedish letters and '-'.
+ + swedish letters + éÉøØüÜçÇñÑ\-'.
 
 *** full address ***
 
