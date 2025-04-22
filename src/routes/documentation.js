@@ -284,6 +284,17 @@ documentRoute({
     }
 })
 
+// for fun
+
+documentRoute({
+    name: "Insert vegan products",
+    method: "GET",
+    url: "/api/other/vegan",
+    body: {
+        "NOTE": "you don't need to do anything besides make the get request. It won't add duplicate products."
+    }
+})
+
 const apiDocumentation = (req, res) => {
     res.json(postmanConfig)
 }
