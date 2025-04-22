@@ -1,6 +1,13 @@
 import mongoose from "mongoose";
 import Product from "./Product.js";
 import { Schema } from "mongoose";
+import {
+  emailRegex,
+  nameRegex,
+  fullAddressRegex,
+  phoneRegex
+} from "../util/regexValidation.js";
+
 
 // Order schema
 const orderSchema = new mongoose.Schema(
@@ -19,27 +26,33 @@ const orderSchema = new mongoose.Schema(
       type: String,
       required: true,
       maxlength: 100,
+      match: [nameRegex, "Förnamn får bara innehålla bokstäver och bindestreck"]
     },
     lastName: {
       type: String,
       required: true,
       maxlength: 100,
+      match: [nameRegex, "Efternamn får bara innehålla bokstäver och bindestreck"]
     },
     address: {
       type: String,
       required: true,
       maxlength: 100,
+      match: [fullAddressRegex, "Ogiltig adressformat. Använd formatet: Gatuadress Postort 12345"]
     },
     email: {
       type: String,
       required: true,
       maxlength: 100,
+      lowercase: true,
+      match: [emailRegex, "Ogiltig e-postadress"]
     },
     // In case if user writes different kinds of format like +46... spaces, parentheses etc.
     phoneNumber: {
       type: String,
       required: true,
       maxlength: 100,
+      match: [phoneRegex, "Telefonnummer får endast innehålla siffror och '+'"]
     },
     totalPrice: {
       type: Number,
